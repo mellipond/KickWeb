@@ -2,23 +2,116 @@
   <head>
   <link rel="stylesheet" src="/styles.css"></link>
   <base href="/"> 
-  </head>
 
+
+ <style>
+  body{
+    font-family: 'courier new', courier, monospace;
+    background-color:antiquewhite                                                                                                                                                                                                              ;
+    }
+    
+    .column1 {
+  float: left;
+  padding: 10px;
+  height: 500px; 
+    }
+    .column2 {
+  float: right;
+  padding: 10px;
+  height: 1000px; 
+    }
+
+    .left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.header {
+display:inline-flex;
+padding: 10px;
+text-align: right;
+color: black;
+font-size: 20px;
+}
+
+
+.box {
+  width:fit-content;
+  height:fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color:black;
+}
+
+  .content{
+      color:blanchedalmond;
+  }
+
+
+  p {
+    font-family: verdana;
+  }
+
+  p.T {
+    font-size: 160px;
+  }
+   p.Y {
+    font-size: 90px;
+  }
+   p.P {
+    font-size: 60px;
+  }
+   p.O {
+    font-size: 60px;
+  }
+
+</style> 
+
+  </head>
+ 
   
+
+
+
 <body>
 
+  <div class="column2">
     <div class = "header" > 
+    <div>
      <p> Emil Ruder </p>   
+    </div>
+    <div>
      <p> Typographie </p>   
-     <p> Typography </p>   
+    </div>
+    <div>
+     <p> Typography </p> 
+    </div>  
     </div>
 
+
 <div class="content">
+<div class="box">
 <p class="T">T</p>
+</div>
+</div>
+
+<div class="column1">
+<div class="box">
 <p class="Y">Y </p>
+</div>
+<div class="box">
 <p class="PO">PO</p>
+</div>
+<div class="box">
 <p class="GRA">GRA</p>
+</div>
+<div class="box">
 <p class="PHIE">PHIE</p>
+</div>
+</div>
 </div>
 
 <img src="Uebungen/Plakat/assets/images/E-Ruder-1607699461.jpeg" alt="plakat ref 1">
