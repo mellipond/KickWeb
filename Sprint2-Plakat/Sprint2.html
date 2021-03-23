@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,86 +12,161 @@
 
 
     <style>
-
         .background {
             background-color: rgb(104, 62, 59);
-            height:520px;
-            width:350px;
-            margin: 300px 0px 0px 400px;;
+            height: calc(2*520px);
+            width: calc(2*350px);
+            transform: translate(300px, 200px);
+            position: relative;
+            animation: bg-appear 5s linear 0s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bg-appear {
+            0% {
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            40% {
+                background-color: rgb(104, 62, 59);
+            }
         }
 
 
         .title {
-            font-size: 130px;
-            color:#382923;
+            position: relative;
+            font-size: calc(2*115px);
+            color: #382923;
             font-family: 'Jost', sans-serif;
             line-height: 0.77;
-            padding-top: 10px;
+            padding-top: 15px;
+
+            transition-property: font-size;
+            opacity: 0.1;
+            transition: 0.3s;
+            }
+
+        .title:hover{
+            transition-property: margin-right;
+            opacity: 1;
+            }
+
+
+        @keyframes title-appear {
+            40% {
+                color: rgba(255, 255, 255, 0);
+            }
+
+            100% {
+                color: #382923;
+
+            }
+
+
         }
 
+
+
+
+
+
         #Rothko {
-            letter-spacing: -6.5px;
+            letter-spacing: 2px;
             margin: 0px 0px 5px 0px;
             margin-left: -8px;
         }
 
         #Chillida {
-            letter-spacing: -11px;
+            letter-spacing: -9px;
             margin: 0px 0px 5px 0px;
             margin-left: -5px;
         }
 
         .square {
+            position:relative;
             background-color: #b5302b;
-            height: 280px;
-            width: 310px;
-            margin: 0px 0px 0px 20px;
+            height: calc(2*280px);
+            width: calc(2*310px);
+            margin-top: 70px;
+            margin-left: 40px;
+            animation: cube-appear 4s cubic-bezier(0.42, 0.0, 0.62, 1.0) 0s;
+            animation-iteration-count: 1;
+
         }
 
-        .description  {
-            font-size: 16px;
+        @keyframes cube-appear {
+            40% {
+                transform: rotate(0deg);
+                height: (280px);
+                width: (310px);
+                background-color: rgba(104, 62, 59, 0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                height: calc(2*280px);
+                width: calc(2*310px);
+                background-color: #b5302b;
+            }
+        }
+
+        .description {
+            position: relative;
+            font-size: calc(2*16px);
             line-height: 0.03;
-            color: rgb(49, 35, 31);
-            padding: 160px 0px 0px 5px;
+            color: rgba(49, 35, 31);
             font-family: 'Jost', sans-serif;
+            padding-top: 320px;
+            animation: text-appear 4s cubic-bezier(0.42, 0.0, 0.62, 1.0) 0s;
+            animation-iteration-count: 1;
+
+            transition: transform .2s; 
+
+
+        }
+
+        .description:hover{
+            transform: scale(2.1);
         }
 
 
+        @keyframes text-appear {
+            0% {
+                color: rgba(104, 62, 59, 0);
+            }
 
-        #original {
-            margin: -210px 0px -50px 0px;
-            font-family: Arial, Helvetica, sans-serif;
+            95% {
+                color: #b5302b00;
+            }
+
+            100% {}
         }
-
-        #neu {
-            margin: 250px 0px -50px 400px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
     </style>
 
 
 
 </head>
+
 <body>
 
     <div class="background">
-        <div class="title"> 
+        <div class="title">
             <p id="Rothko">Rothko</p>
             <p id="Chillida"> Chillida</p>
         </div>
         <div class="square">
             <div class="description">
-            <p> 3.III - 8.IV</p>
-            <p> Kunsthalle</p>
-            <p> Basel</p>
-            <p> Mark</p>
-            <p> Rothko</p>
-            <p> Eduardo</p>
-            <p> Chillida</p>
+                <p> 3.III - 8.IV</p>
+                <p> Kunsthalle</p>
+                <p> Basel</p>
+                <p> Mark</p>
+                <p> Rothko</p>
+                <p> Eduardo</p>
+                <p> Chillida</p>
             </div>
         </div>
     </div>
-  
+
 </body>
+
 </html>
