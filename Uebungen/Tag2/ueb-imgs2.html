@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="ueb-imgs1.css"></link>
 
-  </head>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ueb-imgs1.css">
+  </link>
 
-  
+  <style>
+    .container {
+      position: relative;
+      width: 50%;
+      margin-left: 400px;
+      margin-top: 400px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    .container:hover .overlay {
+      opacity:1;
+    }
+
+    .text {
+      position: absolute;
+      left: 100px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 41px;
+      background-color: rgb(253, 229, 176);
+    }
+
+    .doggy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+</head>
+
+
 <body>
-  <div class="header"></div>
-
-  <h>beautiful places</h>
-  <img src="images/babycat.jpg" alt="kitty 1">
-  <img src="images/babydogs.jpg" alt="doggy 1" style="width:100px; height:100px">
-  <img src="images/babyrabbit.jpg" alt="rabbit 1" style="width:100px; height:100px">
-
-  
+  <div class="container">
+    <img src="/Uebungen/Tag2/assets/images/babycat.jpg" alt="kitty" style="width:500px; height:auto" id="kitty">
+    <div class="overlay">
+      <img src="/Uebungen/Tag2/assets/images/babydogs.jpg" alt="doggy" style="width:500px; height:auto" id="doggy">
+      <p class="text">Cute doggo time!</p>
+    </div>
+  </div>
 </body>
+
 </html>
