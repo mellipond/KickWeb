@@ -12,38 +12,55 @@
 
 
     <style>
-        .background {
-            background-color: rgb(104, 62, 59);
+        .background-box {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+
             height: calc(2*520px);
             width: calc(2*350px);
-            transform: translate(300px, 200px);
-            position: relative;
-            animation: bg-appear 5s linear 0s;
+            transform: translate(350px, 100px);
+
+            background-color: rgb(104, 62, 59);
+            animation: bg-appear 2s linear 0s;
             animation-iteration-count: 1;
         }
 
         @keyframes bg-appear {
             0% {
-                background-color: rgba(255, 255, 255, 0);
+                background-color: rgb(255, 255, 255)
+            }
+
+            20% {
+                background-color: rgba(104, 62, 59, 0);
             }
 
             40% {
+                background-color: rgb(182, 109, 104);
+            }
+            
+            80% {
+                background-color: rgb(126, 230, 230);
+            }
+
+            100% {
                 background-color: rgb(104, 62, 59);
             }
         }
 
 
         .title {
-            position: relative;
-            font-size: calc(2*115px);
+            font-size: 230px;
             color: #382923;
             font-family: 'Jost', sans-serif;
             line-height: 0.77;
             padding-top: 15px;
 
+            animation: title-appear 1s linear 0s;
+
             transition-property: font-size;
             opacity: 0.1;
-            transition: 0.3s;
+            transition: 1s;
         }
 
         .title:hover {
@@ -53,7 +70,11 @@
 
 
         @keyframes title-appear {
-            40% {
+            0% {
+                color: rgb(255, 255, 255);
+            }
+
+            30% {
                 color: rgba(255, 255, 255, 0);
             }
 
@@ -64,9 +85,6 @@
 
 
         }
-
-
-
 
 
 
@@ -83,22 +101,23 @@
         }
 
         .square {
-            position: relative;
             background-color: #b5302b;
             height: calc(2*280px);
             width: calc(2*310px);
-            margin-top: 70px;
-            margin-left: 40px;
+            align-self: center;
+
             animation: cube-appear 4s cubic-bezier(0.42, 0.0, 0.62, 1.0) 0s;
             animation-iteration-count: 1;
 
         }
 
         @keyframes cube-appear {
+            0% {
+                background-color: rgba(255, 255, 255, 0);
+            }
+
             40% {
                 transform: rotate(0deg);
-                height: (280px);
-                width: (310px);
                 background-color: rgba(104, 62, 59, 0);
             }
 
@@ -111,8 +130,8 @@
         }
 
         .description {
-            position: relative;
-            font-size: calc(2*16px);
+            /* position: relative; */
+            font-size: 32px;
             line-height: 0.03;
             color: rgba(49, 35, 31);
             font-family: 'Jost', sans-serif;
@@ -132,7 +151,11 @@
 
         @keyframes text-appear {
             0% {
-                color: rgba(104, 62, 59, 0);
+                color: rgba(255, 255, 255, 0);
+            }
+
+            40% {
+                color: rgba(49, 35, 31, 0);
             }
 
             100% {
@@ -147,7 +170,7 @@
 
 <body>
 
-    <div class="background">
+    <div class="background-box">
         <div class="title">
             <p id="Rothko">Rothko</p>
             <p id="Chillida"> Chillida</p>
