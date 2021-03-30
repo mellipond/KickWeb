@@ -21,32 +21,8 @@
             width: 100vw;
 
             background-color: rgb(104, 62, 59);
-            animation: bg-appear 2s linear 0s;
-            animation-iteration-count: 1;
+
         }
-
-        @keyframes bg-appear {
-            0% {
-                background-color: rgb(255, 255, 255)
-            }
-
-            20% {
-                background-color: rgba(104, 62, 59, 0);
-            }
-
-            40% {
-                background-color: rgb(182, 109, 104);
-            }
-
-            80% {
-                background-color: rgb(126, 230, 230);
-            }
-
-            100% {
-                background-color: rgb(104, 62, 59);
-            }
-        }
-
 
         .title {
             font-size: 230px;
@@ -54,38 +30,7 @@
             font-family: 'Jost', sans-serif;
             line-height: 0.77;
             align-self: center;
-
-
-            animation: title-appear 1s linear 0s;
-
-            transition-property: font-size;
-            opacity: 0.1;
-            transition: 1s;
         }
-
-        .title:hover {
-            transition-property: margin-right;
-            opacity: 1;
-        }
-
-
-        @keyframes title-appear {
-            0% {
-                color: rgb(255, 255, 255);
-            }
-
-            30% {
-                color: rgba(255, 255, 255, 0);
-            }
-
-            100% {
-                color: #382923;
-
-            }
-
-
-        }
-
 
 
         #Rothko {
@@ -102,33 +47,9 @@
 
         .square {
             background-color: #b5302b;
-            height: 40vh;
-            width: 40vw;
+            height: 650px;
+            width: 650px;
             align-self: center;
-
-
-
-            animation: cube-appear 4s cubic-bezier(0.42, 0.0, 0.62, 1.0) 0s;
-            animation-iteration-count: 1;
-
-        }
-
-        @keyframes cube-appear {
-            0% {
-                background-color: rgba(255, 255, 255, 0);
-            }
-
-            40% {
-                transform: rotate(0deg);
-                background-color: rgba(104, 62, 59, 0);
-            }
-
-            100% {
-                transform: rotate(360deg);
-                height: 40vh;
-                width: 40vw;
-                background-color: #b5302b;
-            }
         }
 
         .description {
@@ -137,42 +58,19 @@
             line-height: 0.03;
             color: rgba(49, 35, 31);
             font-family: 'Jost', sans-serif;
-     
-            padding-top: 12em;
 
-            animation: text-appear 4s cubic-bezier(0.42, 0.0, 0.62, 1.0) 0s;
-            animation-iteration-count: 1;
-
-            transition: transform .2s;
-
-
-        }
-
-        .description:hover {
-            transform: scale(2.1);
-        }
-
-
-        @keyframes text-appear {
-            0% {
-                color: rgba(255, 255, 255, 0);
-            }
-
-            40% {
-                color: rgba(49, 35, 31, 0);
-            }
-
-            100% {
-                color: #b5302b00;
-            }
+            padding-top: 410px;
         }
 
 
         /* MEDIAQUERY */
-        @media screen and(max-width: 40em) {
-            
-        }
 
+        @media screen and (max-width: 60em) {
+            .letters {
+                background-color: blueviolet;
+                color: chartreuse;
+            }
+        }
     </style>
 
 
