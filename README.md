@@ -1,2 +1,2 @@
 # Melissa Belotti, KickWeb 2021 Repository
-kickwebmelissa.netlify.app
+https://kickwebmelissa.netlify.app/index.html
