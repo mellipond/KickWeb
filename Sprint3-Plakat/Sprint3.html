@@ -17,9 +17,8 @@
             flex-flow: column;
             justify-content: space-around;
 
-            height: calc(2*650px);
-            width: calc(2*420px);
-            transform: translate(350px, 100px);
+            height: 45em;
+            width: 30em;
             /* height: 100vh;
             width: 100vw; */
 
@@ -28,45 +27,43 @@
         }
 
         .title {
-            font-size: 230px;
+            font-size: 10em;
             color: #382923;
             font-family: 'Jost', sans-serif;
             line-height: 0.77;
             align-self: center;
+            text-align: center;
         }
 
 
         #Rothko {
-            letter-spacing: 2px;
             margin: 0px 0px 0px 0px;
         }
 
         #Chillida {
-            letter-spacing: -9px;
-            margin: 0px 0px -200px 0px;
+            letter-spacing: -7px;
+            margin: 0px 0px -150px 0px;
         }
 
         .square {
             background-color: #b5302b;
-            height: 650px;
-            width: 650px;
+            height: 20em;
+            width: 20em;
             align-self: center;
         }
 
         .description {
-            font-size: 32px;
+            font-size: 1.5em;
             line-height: 0.03;
             color: rgba(49, 35, 31);
             font-family: 'Jost', sans-serif;
-
-            padding-top: 410px;
         }
 
 
         /* MEDIAQUERY */
 
         /* ipad portrait*/
-        @media screen and (max-width:  70em) and (max-height: 80em) and (orientation: portrait) {
+        @media screen and (max-width: 60em) and (max-height: 80em) and (orientation: portrait) {
 
             .background-box {
                 background-color: rgb(75, 83, 160);
@@ -78,33 +75,24 @@
 
             .square {
                 background-color: rgb(156, 80, 228);
-                height: 35em;
-                width: 35em;
+                height: 21em;
+                width: 21em;
             }
 
             .title {
-                font-size: 12em;
+                font-size: 8em;
                 color: rgb(39, 24, 129);
-                padding-top: 1em;
-            }
-
-            #Rothko {
-                margin-bottom: 0.1em;
-            }
-
-            #Chillida {
-                margin-bottom: 0.1em;
             }
 
             .description {
-                padding-top: 0.01em;
                 font-size: 2.5em;
+                text-align: center;
             }
         }
 
 
         /* ipad landscape */
-        @media screen and (max-width: 80em) and (max-height: 70em) and (orientation: landscape) {
+        @media screen and (max-width: 60em) and (max-height: 70em) and (orientation: landscape) {
             .background-box {
                 background-color: rgb(75, 83, 160);
                 width: 100vw;
@@ -130,15 +118,6 @@
 
             }
 
-            #Rothko {
-                letter-spacing: 0.17em;
-                margin-top: 0.1em;
-            }
-
-            #Chillida {
-                letter-spacing: 0.10em;
-                margin-top: 0.1em;
-            }
 
             .description {
                 font-size: 3.5em;
@@ -147,56 +126,48 @@
                 color: rgb(255, 255, 255);
                 font-family: 'Jost', sans-serif;
                 text-align: center;
-                margin-top: -5em;
+                margin-top: 3em;
 
             }
         }
 
         /* phone portrait */
-        @media screen and (max-width: 60em) and (max-height: 40em) and (orientation: portrait) {
+        @media screen and (max-width: 50em) and (max-height: 45em) and (orientation: portrait) {
             .background-box {
                 background-color: rgb(69, 128, 69);
                 width: 100vw;
                 height: 100vh;
-                transform: translate(0px, 0px);
                 display: flex;
                 flex-flow: column;
-
-                
             }
 
             .square {
                 background-color: rgb(87, 255, 72);
-                height: 50em;
-                width: 30em;
+                height: 20em;
+                width: 100vw;
             }
 
             .title {
-                font-size: 6em;
+                font-size: 4em;
                 text-transform: uppercase;
-                padding-top: 1em;
                 color: rgb(16, 88, 16);
 
             }
 
             #Rothko {
-                letter-spacing: 0.15em;
-                margin-top: 0.1em;
-            }
-
+            letter-spacing: 0.05em;
+        }
             #Chillida {
-                letter-spacing: 0.07em;
-                margin-top: 0.1em;
-            }
+            letter-spacing: 0.01em;
+        }
 
             .description {
-                font-size: 3em;
+                font-size: 2em;
                 line-height: 0.35;
 
                 color: rgb(255, 255, 255);
                 font-family: 'Jost', sans-serif;
                 text-align: center;
-                margin-top: 2em;
             }
         }
 
@@ -214,40 +185,24 @@
             .square {
                 background-color: rgb(87, 255, 72);
                 height: 100vh;
-                width: 30em;
+                width: 20em;
             }
 
             .title {
-                font-size: 6em;
+                font-size: 4em;
                 text-transform: uppercase;
                 color: rgb(16, 88, 16);
                 text-align: center;
-                margin-left: 0.1em;
-                margin-top: -1em;
-
-
             }
 
-            #Rothko {
-                letter-spacing: 0.17em;
-                margin-top: 0.1em;
-            }
-
-            #Chillida {
-                letter-spacing: 0.10em;
-                margin-top: 0.1em;
-            }
 
             .description {
-                font-size: 2.5em;
+                font-size: 2em;
                 line-height: 0.25;
 
                 color: rgb(255, 255, 255);
                 font-family: 'Jost', sans-serif;
                 text-align: center;
-                margin-top: -8em;
-                
-
             }
         }
     </style>
