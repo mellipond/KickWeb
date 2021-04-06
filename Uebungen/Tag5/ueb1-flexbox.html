@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,21 @@
     <title>Ueb1 flexbox</title>
 
     <style>
+        .container {
+            display: flex;
+            flex-flow: column;
+            align-content: center;
+            justify-content: space-around;
+            height: 100vh;
+            width: 100vw;
+        }
 
-.container {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content:space-around;
-    height: 100vh;
-    width:100vw;
-}
-
-.quadrat{
-    background-color: black;
-    height: 50vh;
-    width: 50vw;
-    align-self:center;
-}
-
+        .quadrat {
+            background-color: black;
+            height: 50vh;
+            width: 50vw;
+            align-self: center;
+        }
     </style>
 </head>
 
@@ -33,4 +32,5 @@
         </div>
     </div>
 </body>
+
 </html>
